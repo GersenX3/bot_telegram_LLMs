@@ -2,6 +2,12 @@
 
 A Telegram bot powered by Google Gemini LLM, built with Flask. The bot receives messages from Telegram users and responds using Gemini's generative AI.
 
+## Demo
+
+![Telegram Bot Screenshot](example.jpeg)
+
+[Try the bot here](https://t.me/example_gemini_bot)
+
 ## Features
 
 - Receives messages from Telegram users via webhook.
