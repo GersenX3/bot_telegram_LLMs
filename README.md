@@ -4,7 +4,7 @@ A Telegram bot powered by Google Gemini LLM, built with Flask. The bot receives 
 
 ## Demo
 
-![Telegram Bot Screenshot](example.jpeg)
+<img src="example.jpeg" alt="Telegram Bot Screenshot" width="400"/>
 
 [Try the bot here](https://t.me/example_gemini_bot)
 
