@@ -19,7 +19,7 @@ token = os.environ.get("TELEGRAM_BOT_TOKEN")
 
 # Función para generar respuesta con Gemini
 def generate_answer(question):
-    model = genai.GenerativeModel("gemini-1.5-flash")  # puedes usar gemini-1.5-pro también
+    model = genai.GenerativeModel("gemini-2.0-flash")
     response = model.generate_content(question)
     return response.text.strip() if response.text else "Lo siento, no pude generar una respuesta."
 
