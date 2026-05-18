@@ -47,6 +47,7 @@ def index():
         msg = request.get_json()
         print("Payload recibido:", msg)
 
+        chat_id = None
         try:
             chat_id, incoming_que = message_parser(msg)
             print("Pregunta recibida:", incoming_que)
@@ -59,10 +60,11 @@ def index():
             print("Mensaje sin texto, ignorado.")
         except Exception as e:
             print("Error:", e)
-            try:
-                send_message_telegram(chat_id, "Lo siento, ocurrió un error. Intenta de nuevo.")
-            except Exception:
-                pass
+            if chat_id:
+                try:
+                    send_message_telegram(chat_id, "Lo siento, ocurrió un error. Intenta de nuevo.")
+                except Exception:
+                    pass
 
         return Response('ok', status=200)
     else:
