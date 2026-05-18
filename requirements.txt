@@ -7,3 +7,4 @@ google-api-core==2.15.0
 protobuf==4.25.3
 pydantic==2.8.2
 pydantic-core==2.20.1
+gunicorn==22.0.0

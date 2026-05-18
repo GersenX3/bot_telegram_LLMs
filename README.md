@@ -2,6 +2,8 @@
 
 A Telegram bot powered by Google Gemini LLM, built with Flask. The bot receives messages from Telegram users and responds using Gemini's generative AI.
 
+> **100% free to run** — uses Google Gemini's free tier (no credit card required).
+
 ## Demo
 
 <img src="example.jpeg" alt="Telegram Bot Screenshot" width="400"/>
@@ -14,6 +16,7 @@ A Telegram bot powered by Google Gemini LLM, built with Flask. The bot receives 
 - Uses Google Gemini (via `google-generativeai`) to generate responses.
 - Sends AI-generated replies back to users on Telegram.
 - Simple Flask server for webhook handling.
+- **Zero cost** — runs entirely on free-tier APIs.
 
 ## Requirements
 
@@ -24,6 +27,26 @@ See [requirements.txt](requirements.txt) for all dependencies.
 - requests
 - python-dotenv
 - google-generativeai
+
+## Free API Keys
+
+Both API keys required for this project are completely free:
+
+### Gemini API Key (Google AI Studio)
+1. Go to [aistudio.google.com](https://aistudio.google.com)
+2. Sign in with your Google account
+3. Click **"Get API key"** → **"Create API key"**
+4. Copy the generated key (format: `AIza...`)
+
+Free tier limits (more than enough for personal use):
+| Model | Requests/min | Tokens/day |
+|-------|-------------|------------|
+| gemini-1.5-flash | 15 | 1,000,000 |
+
+### Telegram Bot Token
+1. Open Telegram and search for [@BotFather](https://t.me/botfather)
+2. Send `/newbot` and follow the instructions
+3. Copy the token provided at the end
 
 ## Setup
 
